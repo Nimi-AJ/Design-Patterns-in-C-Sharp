@@ -13,7 +13,8 @@ namespace DesignPatterns
         {
             Console.WriteLine("test");
             //LifeWithoutBuilder.main();
-            Builder.main();
+            //Builder.main();
+            FluentBuilderInheritanceWithRecursiveGenerics.main();
             Console.ReadKey();
         }
     }
