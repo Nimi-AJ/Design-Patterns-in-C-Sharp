@@ -12,7 +12,8 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             Console.WriteLine("test");
-            LifeWithoutBuilder.main();
+            //LifeWithoutBuilder.main();
+            Builder.main();
             Console.ReadKey();
         }
     }
