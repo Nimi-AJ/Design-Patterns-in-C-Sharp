@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+
 namespace DesignPatterns.BuilderPattern
 {
     public class Builder
@@ -29,8 +31,18 @@ namespace DesignPatterns.BuilderPattern
                 Text = text ?? throw new ArgumentException(nameof(text));
             }
 
+            public override string ToString()
+            {
+                return ToStringImpl(0);
+            }
 
+            private string ToStringImpl(int indent)
+            {
+                StringBuilder sb = new StringBuilder();
+                string i = new string(' ', indentSize * indent);
+                //sb.Append()
+                return "";
+            }
         }
     }
 }
-
